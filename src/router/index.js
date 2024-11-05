@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import EmployeeDetails from '@/views/employee/employeeDetails.vue'
-import EditEmployeeModal from '@/views/modal/EditEmployeeModal.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,11 +22,7 @@ const router = createRouter({
       name: 'employeeDetails',
       component: EmployeeDetails,
     },
-    {
-      path: '/editEmployeeModal',
-      name: 'editEmployeeModal',
-      component: EditEmployeeModal,
-    },
+ 
   ],
 })
 
