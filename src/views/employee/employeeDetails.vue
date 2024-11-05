@@ -2,7 +2,7 @@
     <div class="container">
         <div class="table-responsive">
             <h1 style="text-align: center; color: royalblue;">Employee List</h1>
-            <router-link to="home">Add</router-link>
+            <router-link to="home">Add Employee</router-link>
             <h6 style="text-align: right;">
                 <router-link to="/">Back</router-link>
             </h6>
@@ -38,11 +38,23 @@
                             </td>
                             <td>
                                 <button @click="openEditModal(employee)" type="button" class="btn btn-primary"
-                                    style="margin-right: 5px;">Edit</button>
+                                    style="margin-right: 5px;">
+                                    <font-awesome-icon :icon="['fas', 'edit']" />
+                                </button>
                                 <button @click="openDetailsModal(employee)" type="button" class="btn btn-info"
-                                    style="margin-right: 5px;">Details</button>
+                                    style="margin-right: 5px;">
+                                    <font-awesome-icon :icon="['fas', 'eye']" />
+
+                                </button>
+
+                                <button type="button" class="btn btn-danger" style="margin-right: 5px;">
+                                    <font-awesome-icon :icon="['fas', 'download']" />
+                                </button>
+
                                 <button @click="deleteEmployee(employee.empId)" type="button" class="btn btn-danger"
-                                    style="margin-right: 5px;">Delete</button>
+                                    style="margin-right: 5px;">
+                                    <font-awesome-icon :icon="['fas', 'trash']" />
+                                </button>
                             </td>
                         </tr>
                     </tbody>

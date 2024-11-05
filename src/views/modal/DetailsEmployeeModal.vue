@@ -9,6 +9,7 @@
                     <img :src="'data:image/png;base64,' + employee.pic" alt="Employee Picture" width="100"
                         height="100" />
                 </div>
+                <hr>
                 <li><strong>ID : </strong> {{ employee.empId }}</li>
                 <li><strong>Name : </strong> {{ employee.empName }}</li>
                 <li><strong>Father's Name : </strong> {{ employee.fname }}</li>
@@ -61,16 +62,16 @@ export default {
 .modal-content {
     background: white;
     padding: 20px;
-    border-radius: 8px;
-    width: 400px;
+    border-radius: 10px;
+    width: 450px;
     max-width: 90%;
     text-align: left;
 }
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 5;
+    margin: 5;
 }
 
 li {
